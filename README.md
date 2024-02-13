@@ -23,7 +23,9 @@ Please follow these guidelines to complete the coding challenges:
 - Write clean, efficient, and maintainable code.
 - Feel free to use any additional libraries or tools if necessary, but justify your choices in the README file.
 - Don't hesitate to ask questions or seek clarification if needed.
-
+- Code Splitting
+- Function Memory Management
+  
 ### Assignment
 
 Implement the following ToDo list application:
@@ -36,9 +38,15 @@ Implement the following ToDo list application:
 ### Status management
 State management uses global state management
 
+### router
+Designed to distinguish between authenticated users and guests through router
+
 ### Custom Hook - Message Hook
 
 The application utilizes a custom hook called `useMessage` to manage global state and display messages. You are tasked with implementing this hook. It should allow displaying messages to the user.
+
+### Auth
+Manage page authentication according to user level when logging in
 
 ### Error handling
 Implement handling for unexpected errors.
@@ -53,5 +61,3 @@ The application is structured with the following components:
 4. **AddTodo Component:** Provides a form to add new tasks.
 5. **EditTodo Component:** Allows editing of task details.
 
-   
-Happy coding!
