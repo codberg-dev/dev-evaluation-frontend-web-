@@ -4,7 +4,7 @@ Welcome to the repository for the frontend coding test! This repository contains
 
 ### About
 
-This repository serves as a platform for evaluating your proficiency in frontend technologies such as HTML, CSS, JavaScript, and relevant frameworks like React, Vue.js, or Angular.
+This repository serves as a platform for evaluating your proficiency in frontend technologies such as HTML, CSS, JavaScript, and relevant frameworks React.
 
 ### Instructions
 
