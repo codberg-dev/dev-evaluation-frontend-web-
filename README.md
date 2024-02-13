@@ -16,6 +16,7 @@ Please follow these guidelines to complete the coding challenges:
 4. Implement your solution in the designated files.
 5. Once you're done, commit your changes and push them to your forked repository.
 6. Submit a pull request with your solution for review.
+7. Create a branch and push it
 
 ### Guidelines
 
