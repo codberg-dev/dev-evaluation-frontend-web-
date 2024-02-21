@@ -1,64 +1,52 @@
-## Frontend Coding Test Repository
 
-Welcome to the repository for the frontend coding test! This repository contains a collection of coding challenges and exercises designed to assess your frontend development skills.
 
-### About
 
-This repository serves as a platform for evaluating your proficiency in frontend technologies such as HTML, CSS, JavaScript, and relevant frameworks React.
+할일 리스트
+    1. 페이지 첫 로드시에 화면에 뿌리기 (데이터가 없을 경우 "할일을 등록해 주세요)
+    2. 업데이트 될 때마다 화면에 다시 렌더링
 
-### Instructions
+* 사용자가 선택한 할일의 정보 가져오기 :
+    사용자가 선택한 할일의 정보와 같은 할일을 전역 상태값에서 찾는다
+    (유저선택할일.id === 전역상태할일.id을 filter함수로 찾기)
+    (id값을 index가 아닌 primary key로)
 
-Please follow these guidelines to complete the coding challenges:
+조회
+    1. 등록된 할일 클릭
+    2. 우측에 할일 디테일 컨테이너 띄우기
+    3. 해당 할일의 정보를 전역 상태에서 가져온 뒤 컨테이너 안에 뿌리기
+    4. x 버튼 클릭 시 컨테이너 닫기
 
-1. Clone this repository to your local machine.
-2. Navigate to the corresponding challenge directory.
-3. Read the challenge instructions provided in the README file.
-4. Implement your solution in the designated files.
-5. Once you're done, commit your changes and push them to your forked repository.
-6. Submit a pull request with your solution for review.
-7. Create a branch and push it (Branch name is feature/{name})
+추가
+    1. 하단 플러스 버튼 (+) 버튼 클릭
+    2. 우측에 할일 디테일 컨테이너 띄우기 (제목 input, 메모 input, 추가 button, x 버튼)
+    3. 사용자 값 입력 후 추가버튼 클릭
+    3-1. 빈 값 입력시에 alert("할일을 입력하세요"), 확인 누르고 3번 복귀
+    4. 사용자가 올바르게 입력했을 경우 alert("할일이 추가되었습니다.")
+    5. 입력한 사용자의 데이터를 전역 상태에 추가하기
+    6. 입력 컨테이너가 닫히고 새로운 List 데이터가 렌더링됨
 
-### Guidelines
+수정
+    1. 할일 선택 후 우측에 할일 디테일 컨테이너 띄우기
+    (제목 input, 내용 input, 삭제 button, 수정 button, x 버튼)
+    2. 수정 버튼 클릭하면 할 일 내용 input의 disable을 풀고 입력 할 수 있게 만들고
+        버튼은 취소, 수정완료로 바꾸기
+    2-1. 취소 버튼을 누르면 input들은 다시 disable, 버튼은 삭제, 수정으로 다시 복귀
+    3. 사용자 입력하기
+    4. 입력 후 수정완료 클릭
+    4-1. 사용자 입력이 빈값이라면(제목만) alert("다시 작성하세요") 
+    5. alert("수정완료 되었습니다.")
+    6. 사용자가 수정하는 해당 할 일의 정보를 전역 상태값에 업데이트하기
+    7. 입력 컨테이너가 닫히고 새로운 List 데이터가 렌더링됨
 
-- Make sure your code follows best practices and is well-documented.
-- Write clean, efficient, and maintainable code.
-- Feel free to use any additional libraries or tools if necessary, but justify your choices in the README file.
-- Don't hesitate to ask questions or seek clarification if needed.
-- Code Splitting
-- Function Memory Management
-  
-### Assignment
+삭제
+    1. 할일 선택 후 우측에 할 일 디테일 컨테이너 띄우기
+    (제목 input, 내용 input, 삭제 button, 수정 button)
+    2. 삭제버튼 클릭하면 confirm("삭제하시겠어요?")
+    3-1. No : confirm 창 닫기
+    4. Yes : alert("삭제완료")
+    5. 사용자가 삭제하려는 해당 할 일을 전역 상태값에서 지우기
+    6. 입력 컨테이너가 닫히고 새로운 List 데이터 렌더링
 
-Implement the following ToDo list application:
 
-1. **Display ToDo List:** Display the ToDo list on the screen.
-2. **Add ToDo:** Implement the ability for users to add new ToDo items.
-3. **Edit ToDo:** Add functionality for users to edit ToDo items.
-4. **Delete ToDo:** Implement the ability for users to delete ToDo items.
-
-### Status management
-State management uses global state management
-
-### router
-Designed to distinguish between authenticated users and guests through router
-
-### Custom Hook - Message Hook
-
-The application utilizes a custom hook called `useMessage` to manage global state and display messages. You are tasked with implementing this hook. It should allow displaying messages to the user.
-
-### Auth
-Manage page authentication according to user level when logging in
-
-### Error handling
-Implement handling for unexpected errors.
-
-### Components
-
-The application is structured with the following components:
-
-1. **App Component:** Main component rendering the entire application.
-2. **TodoList Component:** Displays the list of tasks.
-3. **TodoItem Component:** Represents individual task items.
-4. **AddTodo Component:** Provides a form to add new tasks.
-5. **EditTodo Component:** Allows editing of task details.
-
+- 필요한 경우 추가 라이브러리나 도구를 자유롭게 사용할 수 있지만, README 파일에서 선택한 이유를 정당화하세요.
+=> 리덕스 툴킷 사용 ("@reduxjs/toolkit": "^2.2.1") : 전역 상태 관리 목적

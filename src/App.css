@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.App {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 15px;
+  display: flex;
+}
+.App .todo-main-container {
+  width: calc(65% - 15px);
+  margin-right: 15px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 15px;
+  min-height: 500px;
+}
+.App .todo-sub-container {
+  width: 35%;
+}
+
+.todo-main-container .your-todo-list .add-please {
+  padding: 20px 0;
+  text-align: center;
+}
+.todo-main-container .your-todo-list li {
+  background-color: #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.todo-main-container .your-todo-list li:hover {
+  background-color: #aaa;
+}
+.todo-main-container .create-schedule-btn {
+  display: flex;
+  justify-content: center;
+}
+.todo-main-container .create-schedule-btn button {
+  font-size: 30px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0 10px;
+  transition: 0.2s all;
+  color: black;
+  background-color: #ddd;
+}
+.todo-main-container .create-schedule-btn button:hover {
+  background-color: #eee;
+}
+
+.todo-sub-container .sub-container-inner {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.todo-sub-container .sub-container-inner p {
+  padding: 5px 0;
+}
+.todo-sub-container .sub-container-inner .container-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.todo-sub-container .sub-container-inner .container-head .close-btn {
+  background-color: #fff;
+  border: none;
+  color: red;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 0;
+  cursor: pointer;
+}
+.todo-sub-container .sub-container-inner input {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.todo-sub-container .sub-container-inner button {
+  border: 1px solid gray;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.2s background-color;
+}
+.todo-sub-container .sub-container-inner button:hover {
+  background-color: #bbb;
+}
+.todo-sub-container .schedule-manager .btn-zone {
+  display: flex;
+}
+.todo-sub-container .schedule-manager .btn-zone button {
+  width: 50%;
+  padding: 10px 0;
+}
+.todo-sub-container .schedule-manager .btn-zone button:first-child {
+  width: calc(50% - 10px);
+  margin-right: 10px;
+}/*# sourceMappingURL=App.css.map */
